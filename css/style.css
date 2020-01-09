@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: blue;
+    background-color: black ;
+    background-size: cover;
+}
+/*************************************************************************************************/
+/*                                           conteneder padre                  
+/*************************************************************************************************/
+.flex-container{
+    width: 100%;
+    height: 100vh; /* vh significa que se adapta al dispositivo*/
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    color: white;
+}
+.flex-container>.tarjeta{ /* > esto significa que modifica todos los div dentro de flex-container*/
+    background-color: white;
+    color: black;
+    width: 700px;
+    height: 350px;
+}
+/************************************************************************************************/
+/*                                        titulo y logo                                 
+/************************************************************************************************/
+.flex-titulo{
+    display: flex; /* caja flexible que me permite distribuir la cajas en mi diseno */
+    justify-content: space-between;
+    /*border: solid 1px black*/
+    width: 700px;
+    height: 90px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    font-family: 'Handlee', cursive;
+    font-size: 50px;
+}
+
+.logo{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+/**************************************************************************************************/
+/*                                  texto input
+/**************************************************************************************************/
+
+.flex-contenido{
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 700px;
+    height: 200px;
+}
+
+.texto{
+    display: flex;
+    padding-left: 20px;
+    width: 50%;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.input{
+    display: flex;
+    flex-direction: column; /* esto es lo que que se vean los <p> uno debajo de otro*/
+    width: 300px;
+    height: 150px;
+    font-size: 20px;
+    margin-top: -5px;
+    color: rgb(161, 161, 161);
+    font-family: 'Handlee', cursive;
+    padding: 15px;
+}
+.input>input{
+    font-family: 'Handlee', cursive;
+    font-size: 15px; 
+}
+
+.name{
+    margin-bottom: 8px;
+}
+.email{
+    margin-bottom: 8px;
+}
+.comment{
+    margin-bottom: 8px;
+}
+
+
+/**************************************************************************************************/
+/*                                        boton
+/**************************************************************************************************/
+
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+}
+.boton>input{
+    background: rgb(209, 206, 206);
+    color: rgb(34, 33, 33);
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+}
+
+
+
